@@ -27,3 +27,12 @@ int main() {
 
     return 0;
 }
+
+// Crie uma função float somarArray(float arr[], int tamanho).
+// A função deve receber um array de inteiros (int arr[]) e seu
+// tamanho (int tamanho) como parâmetros.
+// Some os valores que estão guardados no array.
+// Retorne o valor final da soma.
+// Na main, faça a entrada de valores em um array de float.
+// Chame a função somarArray com o array e seu tamanho, e
+// imprima o resultado.
