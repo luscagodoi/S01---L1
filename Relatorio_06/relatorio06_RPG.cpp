@@ -18,6 +18,10 @@ class Personagem{
             alvo.vida -= this->dano;
             cout<<endl<<this->nome<<" atacou "<<alvo.nome<<endl;
         }
+        
+        void mostrarInfo(){
+                cout<<"Nome: "<<this->nome<<", Nivel: "<<this->nivel<<", Dano: "<<this->dano<<", Vida: "<<this->vida<<endl;
+        }
 };
 
 int main() {
@@ -25,16 +29,16 @@ int main() {
     Personagem personagem2("Vitor", 3, 6, 12);
     
     cout<<"Informações do Personagem 1: "<<endl;
-    cout<<"Nome: "<<personagem1.nome<<", Nivel: "<<personagem1.nivel<<", Dano: "<<personagem1.dano<<", Vida: "<<personagem1.vida<<endl;
+    personagem1.mostrarInfo();
     cout<<"Informações do Personagem 2: "<<endl;
-    cout<<"Nome: "<<personagem2.nome<<", Nivel: "<<personagem2.nivel<<", Dano: "<<personagem2.dano<<", Vida: "<<personagem2.vida<<endl;
+    personagem2.mostrarInfo();
     
     personagem1.atacar(personagem2);
     
     cout<<"\nInformações do Personagem 1: "<<endl;
-    cout<<"Nome: "<<personagem1.nome<<", Nivel: "<<personagem1.nivel<<", Dano: "<<personagem1.dano<<", Vida: "<<personagem1.vida<<endl;
+    personagem1.mostrarInfo();
     cout<<"Informações do Personagem 2: "<<endl;
-    cout<<"Nome: "<<personagem2.nome<<", Nivel: "<<personagem2.nivel<<", Dano: "<<personagem2.dano<<", Vida: "<<personagem2.vida<<endl;
+    personagem2.mostrarInfo();
 
     return 0;
 }
