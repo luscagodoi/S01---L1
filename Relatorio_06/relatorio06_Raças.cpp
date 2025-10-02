@@ -9,7 +9,6 @@ class SerVivo{
         virtual void apresentar(){
             cout<<"Olá!";
         }
-        virtual ~SerVivo(){}
 };
 
 class Humano : public SerVivo{
@@ -35,9 +34,9 @@ class Fada : public SerVivo{
 
 int main() {
     list<SerVivo*> racas;
-    Humano* humano = new Humano;
-    Elfo* elfo = new Elfo;
-    Fada* fada = new Fada;
+    SerVivo* humano = new Humano;
+    SerVivo* elfo = new Elfo;
+    SerVivo* fada = new Fada;
     
     racas.push_back(humano);
     racas.push_back(elfo);
