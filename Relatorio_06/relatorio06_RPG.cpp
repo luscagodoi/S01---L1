@@ -15,12 +15,12 @@ class Personagem{
         }
         
         void atacar(Personagem& alvo){
-            alvo.vida -= this->dano;
-            cout<<endl<<this->nome<<" atacou "<<alvo.nome<<endl;
+            alvo.vida -= dano;
+            cout<<endl<<nome<<" atacou "<<alvo.nome<<endl;
         }
         
         void mostrarInfo(){
-                cout<<"Nome: "<<this->nome<<", Nivel: "<<this->nivel<<", Dano: "<<this->dano<<", Vida: "<<this->vida<<endl;
+                cout<<"Nome: "<<nome<<", Nivel: "<<nivel<<", Dano: "<<dano<<", Vida: "<<vida<<endl;
         }
 };
 
