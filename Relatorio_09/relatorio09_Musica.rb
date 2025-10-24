@@ -55,9 +55,7 @@ teste = Maestro.new(lista_musicos)
 
 teste.iniciar_ensaio(peca)
 
-teste.mudar_foco("Ansioso").each do |a|
-  puts a
-end
+puts teste.mudar_foco("Ansioso")
 
 # 1. Crie a classe base Musico (com nome e instrumento). No método tocar_partitura(peca), 
 #    utilize o raise NotImplementedError para forçar a implementação nas filhas 
