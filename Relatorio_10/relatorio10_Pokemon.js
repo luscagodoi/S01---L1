@@ -1,7 +1,5 @@
 class Pokemon{
     #vida
-    nome
-    tipo
     dano = Math.round(Math.random()*5+1)
     vivo = true
     
@@ -64,8 +62,8 @@ class PokemonAgua extends Pokemon{
     }
 }
 
-pokemon1 = new PokemonFogo("Claudio", 15, 4) //Mudem os valores como quiserem.
-pokemon2 = new PokemonAgua("Carlo", 15, 5) //Mudem os valores como quiserem.
+const pokemon1 = new PokemonFogo("Claudio", 15, 4) //Mudem os valores como quiserem.
+const pokemon2 = new PokemonAgua("Carlo", 15, 5) //Mudem os valores como quiserem.
 
 console.log("\nSimulando a luta:\n")
 
